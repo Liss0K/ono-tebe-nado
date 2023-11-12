@@ -44,10 +44,10 @@ body {
 }
 
 .address {
+  width: 240px;
   font-size: 18px;
   font-style: normal;
   line-height: 1.35;
-  width: 240px;
 }
 
 .address > a {
@@ -134,13 +134,13 @@ body {
 
 .bet-button {
   align-self: flex-end;
+  border: 1px solid #FFF;
   padding: 12px 32px;
   color: white;
   font-family: Raleway, sans-serif;
   font-size: 22px;
   text-transform: uppercase;
   background-color: transparent;
-  border: 1px solid #FFF;
   cursor:pointer;
 }
 

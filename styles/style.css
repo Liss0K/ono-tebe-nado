@@ -6,7 +6,6 @@ body {
 .header {
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
-  height: 293px;
   padding: 92px 49px 92px 51px;
 }
 
@@ -48,22 +47,24 @@ body {
   font-size: 18px;
   font-style: normal;
   line-height: 1.35;
+  width: 240px;
 }
 
 .address > a {
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
 }
+
 .header__address {
   justify-self: right;
   align-self: center;
-  width: 240px;
 }
+
 
 .cover {
   position: relative;
   width: 1440px;
-  height: 757px;
+  min-height: 757px;
   padding: 165px 50px 50px;
   color: white;
   background-image: url(/images/cover.jpg);
@@ -87,7 +88,6 @@ body {
 }
 
 .accent-span {
-  height: 115px;
   font-weight: 700;
   font-size: 100px;
   line-height: 1.15;
@@ -96,14 +96,12 @@ body {
 }
 
 .text-center {
-  height: 100px;
   padding-right: 30px;
   line-height: 1;
   text-align: center;
 }
 
 .text-right {
-  height: 100px;
   line-height: 1;
   text-align: end;
 }
@@ -117,9 +115,9 @@ body {
 }
 
 .cover__description {
-  position: absolute;
-  right: 50px;
-  bottom: 50px;
+  position: relative;
+  top: 133px;
+  left: 372px;
   display: flex;
   gap: 78px;
 }
@@ -136,14 +134,14 @@ body {
 
 .bet-button {
   align-self: flex-end;
-  border-width: 1px;
-  border-color: white;
   padding: 12px 32px;
   color: white;
   font-family: Raleway, sans-serif;
   font-size: 22px;
   text-transform: uppercase;
   background-color: transparent;
+  border: 1px solid #FFF;
+  cursor:pointer;
 }
 
 .lots {
@@ -173,8 +171,11 @@ body {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 430px;
-  height: 450px;
+  min-height: 450px;
   padding: 50px 40px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -196,9 +197,7 @@ body {
 }
 
 .card__text {
-  position: absolute;
-  bottom: 50px;
-  width: 350px;
+  position: relative;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
@@ -226,7 +225,6 @@ body {
 .about {
   display: grid;
   grid-template-columns: 430px 1fr;
-  grid-template-rows: 487px;
   column-gap: 25px;
   padding: 181px 50px 0;
 }

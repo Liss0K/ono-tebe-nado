@@ -1,6 +1,6 @@
 body {
-  width: 1440px;
-  margin: auto;
+  max-width: 1440px;
+  margin:  0 auto;
 }
 
 .header {
@@ -63,11 +63,14 @@ body {
 
 .cover {
   position: relative;
-  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
   min-height: 757px;
+  margin-bottom: 180px;
   padding: 165px 50px 50px;
   color: white;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -116,24 +119,26 @@ body {
 
 .cover__description {
   position: relative;
-  top: 133px;
-  left: 372px;
   display: flex;
+  flex-grow: 1;
+  justify-content: end;
+  align-items: flex-end;
   gap: 78px;
 }
 
 .cover__description-text {
-  align-self: center;
+  max-width: 634px;
+  padding-bottom: 13px;
   font-weight: 400;
   font-size: 22px;
   font-style: normal;
   line-height: 28px;
   text-transform: uppercase;
   word-spacing: 18px;
+  white-space: nowrap;
 }
 
 .bet-button {
-  align-self: flex-end;
   border: 1px solid #FFF;
   padding: 12px 32px;
   color: white;
@@ -142,10 +147,11 @@ body {
   text-transform: uppercase;
   background-color: transparent;
   cursor:pointer;
+  white-space: nowrap;
 }
 
 .lots {
-  padding: 180px 50px 0;
+  padding: 0 50px;
 }
 
 .lots__heading {
@@ -168,20 +174,26 @@ body {
 
 .lots__card-list-item {
   position: relative;
+  flex-grow: 1;
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   justify-content: space-between;
   width: 430px;
+  height: 100%;
   min-height: 450px;
   padding: 50px 40px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 }
 
 .card-link {
+  display: flex;
+  height: 100%;
   text-decoration: none;
 }
 
@@ -198,21 +210,22 @@ body {
 
 .card__text {
   position: relative;
+  padding-top: 30px;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
 }
 
 .card_type_film {
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background-image: url(/images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .lots__look-more-link {
@@ -301,4 +314,3 @@ body {
 .footer__menu-link_active {
   text-decoration: none;
 }
-
